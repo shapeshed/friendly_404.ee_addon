@@ -1,13 +1,13 @@
 Friendly 404 - Suggests relevant weblog entries on a 404 page
 ===========================================================================
 
-**Author**: [George Ornbo]
+**Author**: [George Ornbo][]
 **Github Repository**: <http://github.com/shapeshed/friendly_404.ee_addon/>
 
 Installation
 -----
 
-This file pi.human_filesize.php must be placed in the /system/plugins/ folder in your [ExpressionEngine] installation.
+This file pi.human_filesize.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
 
 Name
 ------------------
