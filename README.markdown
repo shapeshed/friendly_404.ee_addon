@@ -2,12 +2,12 @@ Friendly 404 - Suggests relevant weblog entries on a 404 page
 ===========================================================================
 
 **Author**: [George Ornbo][]
-**Github Repository**: <http://github.com/shapeshed/friendly_404.ee_addon/>
+**Source**: [Github][]
 
 Installation
 -----
 
-This file pi.human_filesize.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+This file pi.friendly_404.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
 
 Name
 ------------------
@@ -89,5 +89,6 @@ Friendly 404 is licensed under a [Open Source Initiative - BSD License][] licens
 This file is written using the MarkDown syntax. It may or may not have been parsed. If you are having trouble reading it try running the contents through http://daringfireball.net/projects/markdown/dingus.
 
 [George Ornbo]: http://shapeshed.com/
+[Github]: http://github.com/shapeshed/friendly_404.ee_addon/
 [ExpressionEngine]:http://www.expressionengine.com/index.php?affiliate=shapeshed
 [Open Source Initiative - BSD License]: http://opensource.org/licenses/bsd-license.php
