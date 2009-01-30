@@ -82,7 +82,7 @@ http://expressionengine.com/forums/viewthread/92908/
 License
 -------
 
-SS Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
+Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
 
 ---
 
