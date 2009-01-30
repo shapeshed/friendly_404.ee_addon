@@ -14,26 +14,26 @@
  * @version    1.1.0
  * @since      1.0.0
  * @author     George Ornbo <george@shapeshed.com>
- * @see        {@link http://code.google.com/p/shapeshed-ee-addons/wiki/Friendly404Plugin} 
+ * @see        {@link http://github.com/shapeshed/friendly_404.ee_addon/} 
  * @license    {@link http://www.opensource.org/licenses/mit-license.php} 
  */
 
 $plugin_info = array(
-						'pi_name'			=> 'SS Friendly 404',
+						'pi_name'			=> 'Friendly 404',
 						'pi_version'		=> '1.1.0',
 						'pi_author'			=> 'George Ornbo',
 						'pi_author_url'		=> 'http://shapeshed.com/',
 						'pi_description'	=> 'Returns suggestions for 404 page based on the final segment of the 404 URL',
-						'pi_usage'			=> Ss_friendly_404::usage()
+						'pi_usage'			=> Friendly_404::usage()
 					);
 
 /**
- * SS Friendly 404 Plugin
+ * Friendly 404 Plugin
  *
  * @category   Plugins
- * @package    ss_friendly_404
+ * @package    friendly_404
  */
-class Ss_friendly_404{
+class Friendly_404{
 	
 	/**
 	* Return data
@@ -47,7 +47,7 @@ class Ss_friendly_404{
 	* @access public 
 	* @return string 
 	*/
-	function Ss_friendly_404() 
+	function Friendly_404() 
     {
 
 		global $TMPL, $DB, $IN, $FNS, $REGX;	
@@ -141,73 +141,7 @@ function usage()
 {
 ob_start(); 
 ?>
-NAME
-=======================
-SS Friendly 404 
-
-SYNOPSIS
-=======================
-Returns suggestions of weblog entries on a 404 page. 	
-
-DESCRIPTION
-=======================		
-The plugin matches entries to the last segment of the 404 URL helping users to find pages that match what they were looking for.
-
-Add the following to your 404 template
-
-{exp:ss_friendly_404}
-	{if count == 1}<h4>Perhaps you were looking for<ul>{/if}
-		<li><a href="{auto_path}">{title}</a></li>
-	{if count == total_results}</ul>{/if}
-{/exp:ss_friendly_404}
-
-If no match is found nothing will be shown
-
-***********************
-PARAMETERS
-***********************
-The following parameters are available:
-
-limit - limits the number of entries returned
-
-e.g {exp:ss_friendly_404 limit="10"}
-default: 5
-
-weblog - limits entries to weblogs defined by their short name
-
-e.g {exp:ss_friendly_404 weblog="news|jobs"}	
-default: show all weblogs
-
-***********************
-SINGLE VARIABLES
-***********************
-{title}
-{auto_path}
-{url_title}
-{count}
-{total_results}
-{weblog_id}
-{search_results_url}
-			
-EXAMPLES
-=======================
-{exp:ss_friendly_404 limit="10"}
-10 results will be returned	
-
-{exp:ss_friendly_404 weblog="news|services"}
-Only results from the news and services weblogs will be returned
-
-COMPATIBILITY
-=======================
-ExpressionEngine Version 1.6.x 
-
-SEE ALSO
-=======================
-http://code.google.com/p/shapeshed-ee-addons/wiki/Friendly404Plugin
-
-BUGS
-=======================
-http://code.google.com/p/shapeshed-ee-addons/issues/list
+See http://github.com/shapeshed/friendly_404.ee_addon/
 
 <?php
 $buffer = ob_get_contents();
