@@ -7,15 +7,15 @@
  * ExpressionEngine by EllisLab is copyrighted software
  * The licence agreement is available here http://expressionengine.com/docs/license.html
  * 
- * SS Friendly 404 Plugin
+ * Friendly 404 Plugin
  * 
  * @category   Plugins
- * @package    ss_friendly_404
- * @version    1.1.0
+ * @package    friendly_404
+ * @version    1.0.0
  * @since      1.0.0
  * @author     George Ornbo <george@shapeshed.com>
  * @see        {@link http://github.com/shapeshed/friendly_404.ee_addon/} 
- * @license    {@link http://www.opensource.org/licenses/mit-license.php} 
+ * @license    {@link http://opensource.org/licenses/bsd-license.php} 
  */
 
 $plugin_info = array(

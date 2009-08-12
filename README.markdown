@@ -1,26 +1,33 @@
-Friendly 404 - Suggests relevant weblog entries on a 404 page
-===========================================================================
+# Friendly 404 - Suggests relevant weblog entries on a 404 page
 
 **Author**: [George Ornbo][]
 **Source**: [Github][]
 
-Installation
------
+## Compatibility
+
+* ExpressionEngine Version 1.6.x
+
+## License
+
+Friendly 404 is free for personal and commercial use. 
+
+If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/2898). 
+
+Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
+
+## Installation
 
 This file pi.friendly_404.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
 
-Name
-------------------
+## Name
 
 Friendly 404
 
-Synopsis
--------
+## Synopsis
 
 Returns suggestions of weblog entries on a 404 page.
 
-Description
--------
+## Description
 
 The plugin attempts to match entries to the last segment of the 404 URL helping users to find pages that match what they were looking for.
 
@@ -34,8 +41,7 @@ Add the following to your 404 template
 
 If no match is found nothing will be shown
 
-Parameters
--------
+## Parameters
 
 The following parameters are available:
 
@@ -47,8 +53,7 @@ weblog - limits entries to weblogs defined by their short name (default: show al
 
 	{exp:friendly_404 weblog="news|jobs"} 
 	
-Single Variables
--------
+## Single Variables
 
 	{title}
 	{auto_path}
@@ -58,8 +63,7 @@ Single Variables
 	{weblog_id}
 	{search_results_url}
 	
-Examples
--------
+## Examples
 
 	{exp:friendly_404 limit="10"}
 	
@@ -68,25 +72,6 @@ Only 10 results will be returned
 	{exp:friendly_404 weblog="news|services"}
 	
 Only results from the news and services weblogs will be returned	
-	
-Compatibility
--------
-
-ExpressionEngine Version 1.6.x
-
-See also
--------
-
-http://expressionengine.com/forums/viewthread/92908/
-	
-License
--------
-
-Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
-
----
-
-This file is written using the MarkDown syntax. It may or may not have been parsed. If you are having trouble reading it try running the contents through http://daringfireball.net/projects/markdown/dingus.
 
 [George Ornbo]: http://shapeshed.com/
 [Github]: http://github.com/shapeshed/friendly_404.ee_addon/
