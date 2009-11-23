@@ -19,12 +19,12 @@
  */
 
 $plugin_info = array(
-  'pi_name'			=> 'Friendly 404',
-  'pi_version'		=> '2.0.0',
-  'pi_author'			=> 'George Ornbo',
-  'pi_author_url'		=> 'http://shapeshed.com/',
-  'pi_description'	=> 'Returns suggestions for 404 page based on the final segment of the 404 URL',
-  'pi_usage'			=> Friendly_404::usage()
+  'pi_name'         => 'Friendly 404',
+  'pi_version'      => '2.0.0',
+  'pi_author'       => 'George Ornbo',
+  'pi_author_url'   => 'http://shapeshed.com/',
+  'pi_description'  => 'Returns suggestions for 404 page based on the final segment of the 404 URL',
+  'pi_usage'        => Friendly_404::usage()
 );
 
 /**
