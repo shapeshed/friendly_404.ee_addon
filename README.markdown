@@ -5,19 +5,24 @@
 
 ## Compatibility
 
-* ExpressionEngine Version 1.6.x
+* ExpressionEngine Version 1.6.x (1.x.x releases), ExpressionEngine Version 2.0.x (2.x.x releases)
+* PHP 5.x
 
 ## License
 
 Friendly 404 is free for personal and commercial use. 
 
-If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/2898). 
+If you use it commercially use a donation of $10 is suggested. You can send [donations here](http://pledgie.org/campaigns/5743). 
 
 Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
 
 ## Installation
 
 This file pi.friendly_404.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+
+For EE 1.6.x the file pi.friendly\_404.php must be placed in the /system/plugins/ folder in your [ExpressionEngine][] installation.
+
+For EE 2.0.0 the friendly\_404 folder must be placed in the /system/expressionengine/third\_party/ folder in your [ExpressionEngine][] installation.
 
 ## Name
 
@@ -49,9 +54,13 @@ limit - limits the number of entries returned (default: 5)
 
 	{exp:friendly_404 limit="10"} 
 	
-weblog - limits entries to weblogs defined by their short name (default: show all weblogs)
+weblog (ExpressionEngine 1.6.x) - limits entries to weblogs defined by their short name (default: show all weblogs)
 
 	{exp:friendly_404 weblog="news|jobs"} 
+	
+channel (ExpressionEngine 2.x) - limits entries to weblogs defined by their short name (default: show all channels)
+
+  {exp:friendly_404 channel="news|jobs"}
 	
 ## Single Variables
 
@@ -60,7 +69,8 @@ weblog - limits entries to weblogs defined by their short name (default: show al
 	{url_title}
 	{count}
 	{total_results}
-	{weblog_id}
+	{weblog_id} (EE 1.6.x)
+	{channel_id} (EE 2.x)
 	{search_results_url}
 	
 ## Examples
@@ -72,8 +82,12 @@ Only 10 results will be returned
 	{exp:friendly_404 weblog="news|services"}
 	
 Only results from the news and services weblogs will be returned	
+	
+## License
+
+Friendly 404 is licensed under a [Open Source Initiative - BSD License][] license.
 
 [George Ornbo]: http://shapeshed.com/
 [Github]: http://github.com/shapeshed/friendly_404.ee_addon/
 [ExpressionEngine]:http://www.expressionengine.com/index.php?affiliate=shapeshed
-[Open Source Initiative - BSD License]: http://opensource.org/licenses/bsd-license.php
+[Open Source Initiative - BSD License]: http://o
